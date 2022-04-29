@@ -1,0 +1,117 @@
+.rates {
+    background-color: #3d4251;
+    padding: 100px 0 50px;
+
+    &__title {
+        font-weight: 300;
+        font-size: 48px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 74px;
+    }
+
+    &__payment {
+        display: flex;
+        align-items: center;
+        max-width: 916px;
+        margin: 0 auto;
+        margin-bottom: 34px;
+    }
+
+    &__payment-text {
+        margin-right: 30px;
+        color: #fff;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    &__payment-list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__payment-item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__payment-icon {
+        fill: $text-light;
+    }
+
+    &__payment-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 34px;
+    }
+
+    &__payment-link {
+        color: $accent;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        padding-right: 37px;
+        letter-spacing: 0.5px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: -3px;
+            width: 24px;
+            height: 24px;
+            background-image: url("../images/icons/arrow.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .rates {
+        &__list {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .rates {
+        padding: 61px 0 40px;
+
+        &__payment {
+            flex-direction: column;
+        }
+
+        &__payment-list {
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        &__payment-text {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .rates {
+        &__title {
+            font-size: 32px;
+        }
+    }
+}

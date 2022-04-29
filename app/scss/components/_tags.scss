@@ -1,0 +1,45 @@
+.tags {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 32px 17px;
+
+    &__text {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        color: $text-dark;
+        letter-spacing: 1px;
+
+        &--team {
+            margin-right: 36px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        margin-right: auto;
+        margin-left: 43px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 36px;
+        }
+    }
+
+    &__one {
+        color: $accent;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+    }
+}
+
+@media (max-width: 992px) {
+    .tags {
+        display: none;
+    }
+}

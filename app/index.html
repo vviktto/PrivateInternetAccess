@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private internet access</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+    <div class="alert-message active">
+        <ul class="alert-message__list">
+            <li class="alert-message__item alert-message__item--accent">
+                You are not protected
+            </li>
+            <li class="alert-message__item">
+                Your IP Address: 107.3.176.194
+            </li>
+            <li class="alert-message__item">
+                Your ISP: Comcast Cable
+            </li>
+            <li class="alert-message__item alert-message__item--link">
+                <a class="alert-message__item-link" href="#">
+                    Learn More ›
+                </a>
+            </li>
+        </ul>
+        <button class="alert-message__btn" type="button">
+            <span class="sr-only">Close</span>
+        </button>
+    </div>
+    <header class="header">
+        <a class="logo" href="#body">
+            <img class="logo__img" src="images/logo.png" alt="Logo" width="260" height="36">
+        </a>
+        <button class="header__nav-burger" type="button">
+            <span class="header__nav-burgerline"></span>
+            <span class="sr-only">Menu</span>
+        </button>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Why us</a>
+                    <ul class="header__nav-sublist">
+                        <li class="header__nav-subitem">
+                            <a class="header__nav-sublink" href="#">subitem</a>
+                        </li>
+                        <li class="header__nav-subitem">
+                            <a class="header__nav-sublink" href="#">subitem</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Vpn apps</a>
+                    <ul class="header__nav-sublist">
+                        <li class="header__nav-subitem">
+                            <a class="header__nav-sublink" href="#">subitem</a>
+                        </li>
+                        <li class="header__nav-subitem">
+                            <a class="header__nav-sublink" href="#">subitem</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Support</a>
+                    <ul class="header__nav-sublist">
+                        <li class="header__nav-subitem">
+                            <a class="header__nav-sublink" href="#">subitem</a>
+                        </li>
+                        <li class="header__nav-subitem">
+                            <a class="header__nav-sublink" href="#">subitem</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Resources</a>
+                    <ul class="header__nav-sublist">
+                        <li class="header__nav-subitem">
+                            <a class="header__nav-sublink" href="#">subitem</a>
+                        </li>
+                        <li class="header__nav-subitem">
+                            <a class="header__nav-sublink" href="#">subitem</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <button class="header__btn btn header__btn--login">Log in</button>
+        <button class="header__btn btn header__btn--start">Get started</button>
+    </header>
+
+    <main class="main">
+        <h1 class="sr-only">Private internet access</h1>
+
+        <section class="featured">
+            <div class="container">
+                <article class="article">
+                    <img class="article__img" src="images/blog/article-1.jpg" alt="TV remote" width="600" height="400">
+                    <div class="article__content">
+                        <a class="article__title" href="#">
+                            TV Addons: Legal battle against Canadian media giants demonstrates severe consequences
+                            facing developers accused of copyright infringement
+                        </a>
+                        <span class="article__author">Danica Sergison</span>
+                        <time class="article__time" datetime="2018-07-08">| JUL 08, 2018</time>
+                        <div class="article__tags">
+                            <a class="article__tag" href="#">Copyright,</a>
+                            <a class="article__tag" href="#">News,</a>
+                            <a class="article__tag" href="#">Open Source,</a>
+                            <a class="article__tag" href="#">Privacy</a>
+                        </div>
+                        <span class="article__comments">0</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="recent">
+            <div class="container">
+                <div class="tags">
+                    <h4 class="tags__text">TAGS:</h4>
+                    <ul class="tags__list">
+                        <li class="tags__item">
+                            <a class="tags__one" href="#">bitcoin</a>
+                        </li>
+                        <li class="tags__item">
+                            <a class="tags__one" href="#">bittorrent</a>
+                        </li>
+                        <li class="tags__item">
+                            <a class="tags__one" href="#">irc</a>
+                        </li>
+                        <li class="tags__item">
+                            <a class="tags__one" href="#">news</a>
+                        </li>
+                        <li class="tags__item">
+                            <a class="tags__one" href="#">privacy</a>
+                        </li>
+                        <li class="tags__item">
+                            <a class="tags__one" href="#">programming</a>
+                        </li>
+                        <li class="tags__item">
+                            <a class="tags__one" href="#">security</a>
+                        </li>
+                    </ul>
+                    <a class="tags__text tags__text--team" href="#">team</a>
+                    <a class="tags__text" href="#">contact</a>
+                </div>
+
+                <div class="recent__inner">
+                    <div class="recent__content">
+                        <form class="recent__form " action="#">
+                            <button class="recent__form-btn">
+                                <span class="sr-only">search</span>
+                                <svg class="recent__form-icon" width="18" height="18">
+                                    <use xlink:href="images/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                            <input class="recent__form-input" type="text" placeholder="Search blog">
+                        </form>
+                        <h2 class="recent__title">Recent posts</h2>
+                        <ul class="recent__list">
+                            <li class="recent__item">
+                                <article class="article">
+                                    <img class="article__img" src="images/blog/article-2.jpg" alt="TV remote" width="280" height="180">
+                                    <div class="article__content">
+                                        <a class="article__title" href="#">
+                                            The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken
+                                            Promises
+                                        </a>
+                                        <span class="article__author">Derek Zimmer</span>
+                                        <time class="article__time" datetime="2018-07-28">| JUL 28, 2018</time>
+                                        <div class="article__tags">
+                                            <a class="article__tag" href="#">Governments,</a>
+                                            <a class="article__tag" href="#">Networking,</a>
+                                            <a class="article__tag" href="#">Open Source,</a>
+                                            <a class="article__tag" href="#">Privacy</a>
+                                            <a class="article__tag" href="#">Security</a>
+                                        </div>
+                                        <span class="article__comments">0</span>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recent__item">
+                                <article class="article">
+                                    <img class="article__img" src="images/blog/article-3.jpg" alt="TV remote" width="280" height="180">
+                                    <div class="article__content">
+                                        <a class="article__title" href="#">
+                                            How to get cheaper flights using a VPN
+                                        </a>
+                                        <span class="article__author">Jayson</span>
+                                        <time class="article__time" datetime="2018-07-24">| JUL 24, 2018</time>
+                                        <div class="article__tags">
+                                            <a class="article__tag" href="#">Guides</a>
+                                        </div>
+                                        <span class="article__comments">0</span>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recent__item">
+                                <article class="article">
+                                    <img class="article__img" src="images/blog/article-4.jpg" alt="TV remote" width="280" height="180">
+                                    <div class="article__content">
+                                        <a class="article__title" href="#">
+                                            Net Neutrality was repealed, but the fight
+                                            is far from over
+                                        </a>
+                                        <span class="article__author">Chris Miller</span>
+                                        <time class="article__time" datetime="2018-07-22">| JUL 22, 2018</time>
+                                        <div class="article__tags">
+                                            <a class="article__tag" href="#">Governments,</a>
+                                            <a class="article__tag" href="#">Net Neutrality,</a>
+                                            <a class="article__tag" href="#">News</a>
+                                        </div>
+                                        <span class="article__comments">0</span>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recent__item recent__item--desctop">
+                                <article class="article">
+                                    <img class="article__img" src="images/blog/article-2.jpg" alt="TV remote" width="280" height="180">
+                                    <div class="article__content">
+                                        <a class="article__title" href="#">
+                                            The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken
+                                            Promises
+                                        </a>
+                                        <span class="article__author">Derek Zimmer</span>
+                                        <time class="article__time" datetime="2018-07-28">| JUL 28, 2018</time>
+                                        <div class="article__tags">
+                                            <a class="article__tag" href="#">Governments,</a>
+                                            <a class="article__tag" href="#">Networking,</a>
+                                            <a class="article__tag" href="#">Open Source,</a>
+                                            <a class="article__tag" href="#">Privacy</a>
+                                            <a class="article__tag" href="#">Security</a>
+                                        </div>
+                                        <span class="article__comments">0</span>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recent__item recent__item--desctop">
+                                <article class="article">
+                                    <img class="article__img" src="images/blog/article-3.jpg" alt="TV remote" width="280" height="180">
+                                    <div class="article__content">
+                                        <a class="article__title" href="#">
+                                            How to get cheaper flights using a VPN
+                                        </a>
+                                        <span class="article__author">Jayson</span>
+                                        <time class="article__time" datetime="2018-07-24">| JUL 24, 2018</time>
+                                        <div class="article__tags">
+                                            <a class="article__tag" href="#">Guides</a>
+                                        </div>
+                                        <span class="article__comments">0</span>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recent__item recent__item--desctop">
+                                <article class="article">
+                                    <img class="article__img" src="images/blog/article-4.jpg" alt="TV remote" width="280" height="180">
+                                    <div class="article__content">
+                                        <a class="article__title" href="#">
+                                            Net Neutrality was repealed, but the fight
+                                            is far from over
+                                        </a>
+                                        <span class="article__author">Chris Miller</span>
+                                        <time class="article__time" datetime="2018-07-22">| JUL 22, 2018</time>
+                                        <div class="article__tags">
+                                            <a class="article__tag" href="#">Governments,</a>
+                                            <a class="article__tag" href="#">Net Neutrality,</a>
+                                            <a class="article__tag" href="#">News</a>
+                                        </div>
+                                        <span class="article__comments">0</span>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <button class="recent__btn btn">older posts</button>
+                    </div>
+
+                    <aside class="recent__aside">
+                        <form class="recent__form " action="#">
+                            <button class="recent__form-btn">
+                                <span class="sr-only">search</span>
+                                <svg class="recent__form-icon" width="18" height="18">
+                                    <use xlink:href="images/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                            <input class="recent__form-input" type="text" placeholder="Search blog">
+                        </form>
+                        <h5 class="recent__list-title recent__list-title--announcements">Announcements</h5>
+                        <ul class="recent__aside-list">
+                            <li class="recent__aside-item">Upcoming Changes (Live Chat, Less Censorship, More Access)
+                            </li>
+                            <li class="recent__aside-item">New Servers (US Washington DC)</li>
+                            <li class="recent__aside-item">New Servers (US Denver)</li>
+                            <li class="recent__aside-item">Open Source: Releasing the PIA iOS Client</li>
+                            <li class="recent__aside-item">Opera Extension is now available</li>
+                        </ul>
+                        <h5 class="recent__list-title recent__list-title--posts">Popular posts</h5>
+                        <ul class="recent__aside-list">
+                            <li class="recent__aside-item">
+                                The Gift of Privacy
+                            </li>
+                            <li class="recent__aside-item">
+                                UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture
+                            </li>
+                            <li class="recent__aside-item">
+                                About the PIA Client Security and VPN Security in General
+                            </li>
+                            <li class="recent__aside-item">
+                                A Private Net Is Just As Fundamental A Right As Freedom Of
+                                Speech
+                            </li>
+                            <li class="recent__aside-item">
+                                Wiretapping Today Just Doesn’t Mean What The Word Meant In
+                                The 1990s, So Don’t Fall For That Lie
+                            </li>
+                        </ul>
+
+                        <a class="recent__aside-link" href="#">
+                            <img class="recent__aside-img" src="images/aside-1.jpg" alt="man with laptop" width="340" height="454">
+                        </a>
+
+                        <h5 class="recent__aside-title">Tag cloud</h5>
+                        <a class="recent__aside-link" href="#">
+                            <img class="recent__aside-img" src="images/aside-2.jpg" alt="Tags" width="324" height="309">
+                        </a>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="rates">
+            <div class="container">
+                <h2 class="rates__title">
+                    Sign up today – 7 day money back guarantee
+                </h2>
+                <ul class="rates__list">
+                    <li class="rates__item">
+                        <article class="rate-card">
+                            <h3 class="rate-card__title">MONTHLY</h3>
+                            <span class="rate-card__priсe">
+                                <span class="rate-card__priсe-num">6.95</span>
+                                /mo.
+                            </span>
+                            <span class="rate-card__benefits">Includes all VPN features.</span>
+                            <button class="btn rate-card__btn">SIGN UP</button>
+                        </article>
+                    </li>
+                    <li class="rates__item">
+                        <article class="rate-card">
+                            <h3 class="rate-card__title rate-card__title--bold">Two Years</h3>
+                            <span class="rate-card__priсe">
+                                <span class="rate-card__priсe-num">2.91</span>
+                                /mo.
+                            </span>
+                            <div class="rate-card__info">
+                                <span class="rate-card__old-price">$166.80</span>
+                                <span class="rate-card__benefits">$69.95 per two years</span>
+                            </div>
+                            <span class="rate-card__save">Save 58%*</span>
+                            <button class="btn rate-card__btn">SIGN UP</button>
+                        </article>
+                    </li>
+                    <li class="rates__item">
+                        <article class="rate-card">
+                            <h3 class="rate-card__title rate-card__title--bold">YEARLY</h3>
+                            <span class="rate-card__priсe">
+                                <span class="rate-card__priсe-num">3.33</span>
+                                /mo.
+                            </span>
+                            <div class="rate-card__info">
+                                <span class="rate-card__old-price">$83.40</span>
+                                <span class="rate-card__benefits">$39.95 per year</span>
+                            </div>
+                            <span class="rate-card__save">Save 52%*</span>
+                            <button class="btn rate-card__btn">SIGN UP</button>
+                        </article>
+                    </li>
+                </ul>
+                <div class="rates__payment">
+                    <span class="rates__payment-text">Ways to pay:</span>
+                    <ul class="rates__payment-list">
+                        <li class="rates__payment-item">
+                            <span class="sr-only">Mastercard</span>
+                            <svg class="rates__payment-icon" width="66" height="51">
+                                <use xlink:href="images/sprite.svg#mastercard"></use>
+                            </svg>
+                        </li>
+                        <li class="rates__payment-item">
+                            <span class="sr-only">Mastercard</span>
+                            <svg class="rates__payment-icon" width="66" height="51">
+                                <use xlink:href="images/sprite.svg#mastercard"></use>
+                            </svg>
+                        </li>
+                        <li class="rates__payment-item">
+                            <img src="images/icons/amex.png" alt="American express" width="54" height="54">
+                        </li>
+                        <li class="rates__payment-item">
+                            <img src="images/icons/amex.png" alt="American express" width="54" height="54">
+                        </li>
+                        <li class="rates__payment-item">
+                            <span class="sr-only">Bitcoin</span>
+                            <svg class="rates__payment-icon" width="79" height="24">
+                                <use xlink:href="images/sprite.svg#bitcoin"></use>
+                            </svg>
+                        </li>
+                        <li class="rates__payment-item">
+                            <span class="sr-only">Ok-pay</span>
+                            <svg class="rates__payment-icon" width="74" height="18">
+                                <use xlink:href="images/sprite.svg#ok-pay"></use>
+                            </svg>
+                        </li>
+                        <li class="rates__payment-item">
+                            <span class="sr-only">Ok-pay</span>
+                            <svg class="rates__payment-icon" width="74" height="18">
+                                <use xlink:href="images/sprite.svg#ok-pay"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rates__payment-links">
+                    <a class="rates__payment-link" href="#">How to pay anonymously</a>
+                    <a class="rates__payment-link" href="#">REDEEM GIFT CARD</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <a class="logo" href="#body">
+                <img class="logo__img" src="images/logo.png" alt="Logo" width="260" height="36">
+            </a>
+            <div class="footer__inner">
+                <div class="footer__lists">
+                    <h2 class="footer__title">Company</h2>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">About Us</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Our Team</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Careers</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Press</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">In the Media</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">VPN Reviews</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Companies We Support</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Contact Us</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__lists">
+                    <h2 class="footer__title">programs</h2>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Whitehat Security</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Affiliates</a>
+                        </li>
+                    </ul>
+
+                    <h2 class="footer__title">learn more</h2>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">VPN Encryption</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Android VPN App</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">VPN Encryption</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">iOS VPN App</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">PIA Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__lists">
+                    <h2 class="footer__title">Legal</h2>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Terms Of Service</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">DMCA Policy</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">Export Control Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <h2 class="footer__title">Social</h2>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <span class="sr-only">Facebook</span>
+                                <svg class="footer__social-icon" width="14" height="28">
+                                    <use xlink:href="images/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <span class="sr-only">Twitter</span>
+                                <svg class="footer__social-icon" width="28" height="23">
+                                    <use xlink:href="images/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <span class="sr-only">Google plus</span>
+                                <svg class="footer__social-icon" width="34" height="22">
+                                    <use xlink:href="images/sprite.svg#google"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <span class="sr-only">Linkedin</span>
+                                <svg id="Group" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                    <path id="LinkedIn__x28_alt_x29_-path" d="M26.271,0H2.247A2.1,2.1,0,0,0,0,1.9V26.046A2.149,2.149,0,0,0,2.247,28H26.271A1.717,1.717,0,0,0,28,26.046V1.9A1.671,1.671,0,0,0,26.271,0Z" fill="#323642" />
+                                    <path id="LinkedIn__x28_alt_x29_" d="M11.075,18.961H6.867c0-.1.056-11.457,0-12.728h4.207V7.965A4.459,4.459,0,0,1,15,5.861a4.742,4.742,0,0,1,3.545,1.4,6.152,6.152,0,0,1,1.443,4.331v7.369H15.529V12.079c0-1.91-.713-2.879-2.118-2.879a2.37,2.37,0,0,0-2.189,1.548,2.754,2.754,0,0,0-.148,1.031V18.96Zm-7,0H.257V6.233H4.074V18.959ZM2.382,4.324H2.354A2.161,2.161,0,0,1,0,2.174,2.2,2.2,0,0,1,2.409,0,2.188,2.188,0,0,1,4.791,2.161,2.2,2.2,0,0,1,2.382,4.324Z" transform="translate(4.198 4.586)" fill="#fff" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <span class="sr-only">Reddit</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29.995" height="29.993" viewBox="0 0 29.995 29.993">
+                                    <g id="_2SL" data-name="2SL" transform="translate(-0.003 -0.007)">
+                                        <path id="Shape" d="M14.654,0A15,15,0,1,1,0,14.993,15,15,0,0,1,14.654,0Z" transform="translate(0.003 0.007)" fill="#323642" />
+                                        <path id="Shape-2" data-name="Shape" d="M10.011,20.055a12.151,12.151,0,0,1-5.065-1.7,7.7,7.7,0,0,1-3.121-3.441,5.733,5.733,0,0,1-.385-3.282.224.224,0,0,0-.115-.263A2.717,2.717,0,0,1,.036,9.5a2.54,2.54,0,0,1,3.1-2.948,8.171,8.171,0,0,1,1.3.566.246.246,0,0,0,.29,0,11.417,11.417,0,0,1,4.12-1.732A11.669,11.669,0,0,1,11.36,5.1c.167,0,.2-.089.239-.214q.676-2.157,1.358-4.312a.668.668,0,0,1,.926-.541c1.256.268,2.511.532,3.765.806A.3.3,0,0,0,18,.726,2,2,0,0,1,21.244,1a1.965,1.965,0,0,1-1.452,2.883,2.015,2.015,0,0,1-2.251-1.464.385.385,0,0,0-.354-.32c-.968-.2-1.932-.411-2.9-.619-.076-.016-.155-.025-.252-.041-.4,1.258-.8,2.5-1.215,3.784l.666.069A11.453,11.453,0,0,1,18.725,7.12a.181.181,0,0,0,.258-.018A2.554,2.554,0,0,1,21.8,6.718a2.489,2.489,0,0,1,1.529,2.171,2.559,2.559,0,0,1-1.181,2.382.453.453,0,0,0-.216.506,5.9,5.9,0,0,1-1.5,4.844A10.325,10.325,0,0,1,14.7,19.829a13.539,13.539,0,0,1-2.981.333A13.722,13.722,0,0,1,10.011,20.055Z" transform="translate(3.424 5.564)" fill="#fff" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="#">
+                                <span class="sr-only">YouTube</span>
+                                <svg id="sociai_icons_youtube" data-name="sociai icons youtube" xmlns="http://www.w3.org/2000/svg" width="41.429" height="29" viewBox="0 0 41.429 29">
+                                    <path id="YouTube__x28_alt_x29_" d="M41.429,6.195A6.193,6.193,0,0,0,35.237,0H6.191A6.193,6.193,0,0,0,0,6.195v16.61A6.193,6.193,0,0,0,6.191,29H35.237a6.193,6.193,0,0,0,6.191-6.195V6.195Z" fill="#323642" />
+                                    <path id="YouTube__x28_alt_x29_-path" d="M0,15.6V0L11.831,7.8Z" transform="translate(16.571 7)" fill="#fff" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__item">
+                    <h2 class="footer__title">About</h2>
+                    <p class="footer__text">
+                        Private Internet Access is the leading VPN Service provider specializing in secure, encrypted
+                        VPN tunnels which create several layers of privacy and security providing you safety on the
+                        internet. Our service is backed by multiple gateways worldwide with access in 28+ countries, 44+
+                        regions.
+                    </p>
+                    <span class="footer__info footer__info--data">
+                        Map data provided by Google.
+                    </span>
+                    <span class="footer__info">
+                        PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis, Inc. All Rights
+                        Reserved.
+                    </span>
+                    <span class="footer__info">
+                        PC Mag quote reprinted from www.pcmag.com with permission. © 2012 Ziff Davis, Inc. All Rights
+                        Reserved.
+                    </span>
+                    <span class="footer__info footer__info--copy">
+                        © London Trust Media, Inc. All Rights Reserved.
+                    </span>
+                    <div class="footer__social">
+                        <h2 class="footer__title">Social</h2>
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <span class="sr-only">Facebook</span>
+                                    <svg class="footer__social-icon" width="14" height="28">
+                                        <use xlink:href="images/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <span class="sr-only">Twitter</span>
+                                    <svg class="footer__social-icon" width="28" height="23">
+                                        <use xlink:href="images/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <span class="sr-only">Google plus</span>
+                                    <svg class="footer__social-icon" width="34" height="22">
+                                        <use xlink:href="images/sprite.svg#google"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <span class="sr-only">Linkedin</span>
+                                    <svg id="Group" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                        <path id="LinkedIn__x28_alt_x29_-path" d="M26.271,0H2.247A2.1,2.1,0,0,0,0,1.9V26.046A2.149,2.149,0,0,0,2.247,28H26.271A1.717,1.717,0,0,0,28,26.046V1.9A1.671,1.671,0,0,0,26.271,0Z" fill="#323642" />
+                                        <path id="LinkedIn__x28_alt_x29_" d="M11.075,18.961H6.867c0-.1.056-11.457,0-12.728h4.207V7.965A4.459,4.459,0,0,1,15,5.861a4.742,4.742,0,0,1,3.545,1.4,6.152,6.152,0,0,1,1.443,4.331v7.369H15.529V12.079c0-1.91-.713-2.879-2.118-2.879a2.37,2.37,0,0,0-2.189,1.548,2.754,2.754,0,0,0-.148,1.031V18.96Zm-7,0H.257V6.233H4.074V18.959ZM2.382,4.324H2.354A2.161,2.161,0,0,1,0,2.174,2.2,2.2,0,0,1,2.409,0,2.188,2.188,0,0,1,4.791,2.161,2.2,2.2,0,0,1,2.382,4.324Z" transform="translate(4.198 4.586)" fill="#fff" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <span class="sr-only">Reddit</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="29.995" height="29.993" viewBox="0 0 29.995 29.993">
+                                        <g id="_2SL" data-name="2SL" transform="translate(-0.003 -0.007)">
+                                            <path id="Shape" d="M14.654,0A15,15,0,1,1,0,14.993,15,15,0,0,1,14.654,0Z" transform="translate(0.003 0.007)" fill="#323642" />
+                                            <path id="Shape-2" data-name="Shape" d="M10.011,20.055a12.151,12.151,0,0,1-5.065-1.7,7.7,7.7,0,0,1-3.121-3.441,5.733,5.733,0,0,1-.385-3.282.224.224,0,0,0-.115-.263A2.717,2.717,0,0,1,.036,9.5a2.54,2.54,0,0,1,3.1-2.948,8.171,8.171,0,0,1,1.3.566.246.246,0,0,0,.29,0,11.417,11.417,0,0,1,4.12-1.732A11.669,11.669,0,0,1,11.36,5.1c.167,0,.2-.089.239-.214q.676-2.157,1.358-4.312a.668.668,0,0,1,.926-.541c1.256.268,2.511.532,3.765.806A.3.3,0,0,0,18,.726,2,2,0,0,1,21.244,1a1.965,1.965,0,0,1-1.452,2.883,2.015,2.015,0,0,1-2.251-1.464.385.385,0,0,0-.354-.32c-.968-.2-1.932-.411-2.9-.619-.076-.016-.155-.025-.252-.041-.4,1.258-.8,2.5-1.215,3.784l.666.069A11.453,11.453,0,0,1,18.725,7.12a.181.181,0,0,0,.258-.018A2.554,2.554,0,0,1,21.8,6.718a2.489,2.489,0,0,1,1.529,2.171,2.559,2.559,0,0,1-1.181,2.382.453.453,0,0,0-.216.506,5.9,5.9,0,0,1-1.5,4.844A10.325,10.325,0,0,1,14.7,19.829a13.539,13.539,0,0,1-2.981.333A13.722,13.722,0,0,1,10.011,20.055Z" transform="translate(3.424 5.564)" fill="#fff" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a class="footer__social-link" href="#">
+                                    <span class="sr-only">YouTube</span>
+                                    <svg id="sociai_icons_youtube" data-name="sociai icons youtube" xmlns="http://www.w3.org/2000/svg" width="41.429" height="29" viewBox="0 0 41.429 29">
+                                        <path id="YouTube__x28_alt_x29_" d="M41.429,6.195A6.193,6.193,0,0,0,35.237,0H6.191A6.193,6.193,0,0,0,0,6.195v16.61A6.193,6.193,0,0,0,6.191,29H35.237a6.193,6.193,0,0,0,6.191-6.195V6.195Z" fill="#323642" />
+                                        <path id="YouTube__x28_alt_x29_-path" d="M0,15.6V0L11.831,7.8Z" transform="translate(16.571 7)" fill="#fff" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

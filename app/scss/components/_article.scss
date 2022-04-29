@@ -1,0 +1,73 @@
+.article {
+    display: flex;
+
+    &__img {
+        margin-right: 40px;
+        height: fit-content;
+    }
+
+    &__title {
+        display: block;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.4;
+        color: $title;
+        margin-bottom: 10px;
+    }
+
+    &__author {
+        font-size: 14px;
+        color: $text-dark;
+    }
+
+    &__time {
+        font-size: 14px;
+        color: $text-light;
+    }
+
+    &__tag {
+        font-size: 12px;
+        color: $accent;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    &__comments {
+        font-size: 14px;
+        color: $text-light;
+        padding-left: 25px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 17px;
+            height: 16px;
+            background-image: url("../images/icons/icon-comment.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .article {
+        flex-direction: column;
+
+        &__img {
+            margin-right: 0;
+            width: 100%;
+        }
+
+        &__content {
+            padding: 6px;
+        }
+
+        &__tags {
+            margin-top: 20px;
+        }
+    }
+}

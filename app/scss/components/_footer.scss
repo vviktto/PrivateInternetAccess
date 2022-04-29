@@ -1,0 +1,150 @@
+.footer {
+    padding: 72px 0 90px;
+
+    .logo {
+        margin-bottom: 75px;
+
+        &__img {
+            width: 239px;
+            height: 33px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__lists {
+        min-width: 147px;
+        margin-right: 10px;
+        .footer__social {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.9px;
+        color: $text-dark;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        min-width: 140px;
+        margin-bottom: 65px;
+    }
+
+    &__link {
+        padding: 4px 0;
+        display: block;
+    }
+
+    &__link,
+    &__text {
+        font-size: 14px;
+        line-height: 1.6;
+        color: $text-light;
+    }
+
+    &__text {
+        margin-bottom: 38px;
+    }
+
+    &__social {
+        display: none;
+    }
+
+    &__item {
+        max-width: 600px;
+
+        .footer__social {
+            display: block;
+        }
+    }
+
+    &__info {
+        display: block;
+        color: $text-light;
+        font-size: 12px;
+
+        &--data {
+            margin-bottom: 19px;
+        }
+
+        &--copy {
+            margin-top: 19px;
+            margin-bottom: 47px;
+        }
+    }
+
+    &__social-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__social-icon {
+        fill: $text-dark;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer {
+        padding: 50px 0;
+
+        .logo {
+            margin-bottom: 45px;
+        }
+
+        &__inner {
+            flex-wrap: wrap;
+        }
+
+        &__lists {
+            max-width: 100%;
+        }
+
+        &__list {
+            margin-bottom: 40px;
+        }
+
+        &__item {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .footer {
+        &__item {
+            .footer__social {
+                display: none;
+            }
+        }
+
+        &__social {
+            display: block;
+            max-width: 170px;
+        }
+
+        &__social-list {
+            gap: 26px;
+        }
+
+        &__lists {
+            margin-right: 18px;
+        }
+
+        &__list {
+            margin-bottom: 34px;
+        }
+
+        &__text {
+            margin-bottom: 18px;
+        }
+    }
+}

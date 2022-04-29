@@ -1,0 +1,197 @@
+.recent {
+    padding-bottom: 73px;
+
+    &__inner {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 800px;
+        border-right: 1px solid #ebeced;
+        padding-right: 30px;
+
+        .recent__form {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 1.4;
+        color: $title;
+        margin-bottom: 6px;
+    }
+
+    &__list {
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        padding: 30px 0;
+        border-bottom: 1px solid #ebeced;
+    }
+
+    &__btn {
+        display: block;
+        padding: 14px 0 9px;
+        width: 260px;
+        margin: 0 auto;
+    }
+
+    &__aside {
+        max-width: 350px;
+        padding-left: 10px;
+    }
+
+    &__form {
+        width: 100%;
+        border: 1px solid #ebeced;
+        border-radius: 5px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 44px;
+    }
+
+    &__form-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin-right: 13px;
+    }
+
+    &__form-icon {
+        fill: none;
+        stroke: $title;
+    }
+
+    &__form-input {
+        outline: transparent;
+
+        &::placeholder {
+            font-size: 18px;
+            font-weight: 300;
+            color: $title;
+        }
+    }
+
+    &__list-title {
+        font-size: 24px;
+        font-weight: 300;
+        color: $title;
+        padding-left: 80px;
+        margin-bottom: 40px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: -15px;
+            left: 0;
+            width: 60px;
+            height: 60px;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        &--announcements::before {
+            background-image: url("../images/icons/bell.svg");
+        }
+
+        &--posts::before {
+            background-image: url("../images/icons/wifi.svg");
+        }
+    }
+
+    &__aside-list {
+        border-bottom: 1px solid #ebeced;
+        margin-bottom: 52px;
+    }
+
+    &__aside-item {
+        font-size: 14px;
+        color: $text-dark;
+        margin-bottom: 23px;
+        padding-left: 10px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 5px;
+            height: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            border-radius: 50%;
+            background-color: $accent;
+        }
+    }
+
+    &__aside-title {
+        font-size: 24px;
+        font-weight: 300;
+        margin-top: 58px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .recent {
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__content {
+            max-width: 100%;
+            border-right: none;
+            padding-right: 0;
+            margin-bottom: 60px;
+        }
+
+        &__aside {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .recent {
+        &__content {
+            margin-bottom: 73px;
+            .recent__form {
+                display: block;
+            }
+        }
+
+        &__aside {
+            .recent__form {
+                display: none;
+            }
+        }
+
+        &__item {
+            &--desctop {
+                display: none;
+            }
+        }
+
+        &__list {
+            margin-bottom: 59px;
+        }
+
+        &__btn {
+            width: 100%;
+        }
+
+        &__aside-list {
+            margin-bottom: 69px;
+        }
+    }
+}
